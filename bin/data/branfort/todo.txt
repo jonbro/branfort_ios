@@ -1,0 +1,6 @@
+output
+menu
+	step
+	play
+	clear
+copy/paste integrated in program memory
