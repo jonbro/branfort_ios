@@ -6,6 +6,7 @@
 #include "ofxBlud.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
+#include "lunar.h"
 
 class testApp : public ofxiPhoneApp{
 

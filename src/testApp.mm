@@ -1,5 +1,5 @@
 #include "testApp.h"
-
+#include "bludClipboard.h"
 //--------------------------------------------------------------
 void testApp::setup(){
 	iPhoneSetOrientation(OFXIPHONE_ORIENTATION_LANDSCAPE_RIGHT);
@@ -7,6 +7,9 @@ void testApp::setup(){
 	ofxRegisterMultitouch(this);
 
 	ofSoundStreamSetup(2,0,this, 44100,256, 4);
+	
+	Lunar<bludClipboard>::Register(blud.luaVM);
+
 	cout << blud.executeFile("branfort/core.lua") << endl; // this returns an error code for the compiled code
 }
 

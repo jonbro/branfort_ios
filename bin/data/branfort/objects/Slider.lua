@@ -5,7 +5,7 @@ Slider = class(Object, function(o, x, y)
   o._height = 63
   o._hasTouch = false
   o._currentTouch = 0
-  o._options = " <>+-[].,"
+  o._options = " <>+-[].,|*"
   o._value = 0
   Object.init(o, x, y, o._width, o._height)
 end)
@@ -13,17 +13,20 @@ end)
 function Slider:draw()
   x_start = self._width/2-30
   for i=1,#self._options do
-    bg:setColor(255, 255, 255, 255)
-    lfont:draw(self._options:sub(i, i), self._value + self.pos.x+60*(i-1) + x_start+20, self.pos.y+30)
+    self:drawCell(self._value + self.pos.x+60*(i-1) + x_start + 1, self.pos.y+self._height/2-29, self._options:sub(i, i));
+    if self._value + self.pos.x+60*(i-1) + x_start+20 > bg:getWidth() then
+      return 0
+    end
   end
 end
-
+function Slider:drawCell(x, y, value)
+  bg:setColor(255, 255, 255, 255)
+  lfont:draw(value, x+19, y-self._height/2+59)
+  bb:setColor(0,0,0,150)
+  bb:addRect(x, y, 0, 58, self._height);
+end
 function Slider:update()
   x_start = self._width/2-30
-  for i=1,#self._options do
-    bb:setColor(0,0,0,150)
-    bb:addRect(self._value + self.pos.x+60*(i-1) + x_start + 1, self.pos.y+self._height/2-29, 0, 58, self._height);
-  end
   -- draw the square for the selected one
   bb:setColor(0,0,0,255)
   bb:addRect(self.pos.x+self._width/2-30, self.pos.y+self._height/2-30, 0, 58, self._height);
@@ -43,6 +46,7 @@ function Slider:update()
     end
   end
 end
+
 function Slider:getPosition()
   if self._min and -1*self._value < self._min then
     return -1*math.floor(self._min/60)+1
@@ -57,6 +61,9 @@ function Slider:getPosition()
 end
 function Slider:getValue()
   return self._options:sub(self:getPosition(), self:getPosition())
+end
+function Slider:setValue(_val)
+  self._value = (_val-1)*-60
 end
 function Slider:touchDown(x, y, id)
   if Rectangle.doesPointTouch(self, Vec2(x, y)) then

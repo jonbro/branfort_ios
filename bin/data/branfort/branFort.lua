@@ -5,6 +5,7 @@ branFort = class(function(o)
   o._progPosition = 1
   o._program = ""
   o._output = ""
+  o.waitingForNextSync = false
 end)
 function branFort:clearMemory()
   self._memory = ""
@@ -13,19 +14,33 @@ function branFort:clearMemory()
   end
 end
 function branFort:runProgram(program)
-  self._program = program
-  self._progPosition = 1
-  self._memPosition = 1
-  -- clear the output
-  self._output = ""
-  while(self._progPosition < self._program:len()+1) do
+  if program ~= nil then
+    self._program = program
+    self._progPosition = 1
+    self._memPosition = 1
+    -- clear the output
+    self._output = ""
+  end
+  while(self._progPosition < self._program:len()+1) and self.waitingForNextSync ~= true do
     self:runCommand(self._program:sub(self._progPosition, self._progPosition))
   end
   return self._output
 end
-function branFort:runNextCommand()
+function branFort:reset()
+  self._progPosition = 1
+  self._memPosition = 1
+  self:clearMemory()
+end
+function branFort:runNextCommand(program)
+  if self._program == "" then
+    self._program = program
+    self._progPosition = 1
+    self._memPosition = 1
+  end
+  -- empty the output, since we are just single stepping, our output alread concatenates
+  self._output = ""
   self:runCommand(self._program:sub(self._progPosition, self._progPosition))
-  print(self._progPosition, self._program:sub(self._progPosition, self._progPosition), self._memPosition, string.byte(self._memory, self._memPosition))
+  return self._output
 end
 function branFort:moveToNextCommand()
   self._progPosition = self._progPosition+1
@@ -98,6 +113,19 @@ function branFort:runCommand(command)
   elseif command == "." then
     -- append the current memory position to the output
     self._output = self._output .. string.char(string.byte(self._memory, self._memPosition))
+    self:moveToNextCommand();
+  elseif command == "|" then
+    -- ok, now we are getting outside of the standard brainfuck opcodes, and into custom ones.
+    -- this is the wait for opcode
+    self.waitingForNextSync = true
+    self:moveToNextCommand();
+  elseif command == "*" then
+    -- the play sound opcode
+    local memory = string.byte(self._memory, self._memPosition);
+    local sound = math.floor(memory/8)
+    local note = memory%8
+    sounds[sound+1]:setNote(note+56)
+    sounds[sound+1]:trigger();
     self:moveToNextCommand();
   else
     self:moveToNextCommand();
