@@ -1,4 +1,5 @@
 menu
-	help file
-	confirmation for clearing program
-	slider inertia
+	menu state
+		clear
+		tempo
+		help file

@@ -3,7 +3,9 @@ do
     "objects/Slider",
     "objects/MemorySlider",
     "objects/Button",
-    "states/ProgrammingState"
+    "objects/Text",
+    "states/ProgrammingState",
+    "states/MenuState"
   }
   for i, v in ipairs(filesToImport) do
     dofile(blud.bundle_root .. "/branfort/".. v ..".lua")

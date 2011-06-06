@@ -15,7 +15,6 @@
 		5E0E4AF9139A73280098ABDB /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0E4ABA139A73280098ABDB /* libluajit.a */; };
 		5E0E4B12139A739F0098ABDB /* ofxBlud.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E4B11139A739F0098ABDB /* ofxBlud.mm */; };
 		5E0E4B17139A73B20098ABDB /* bludLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0E4B15139A73B20098ABDB /* bludLock.cpp */; };
-		5E136A98135DBC3500DB33B1 /* drum_brain in Resources */ = {isa = PBXBuildFile; fileRef = 5E136A8E135DBC3500DB33B1 /* drum_brain */; };
 		5E175E571339924A00234482 /* config in Resources */ = {isa = PBXBuildFile; fileRef = 5E175E241339924A00234482 /* config */; };
 		5E175E581339924A00234482 /* description in Resources */ = {isa = PBXBuildFile; fileRef = 5E175E251339924A00234482 /* description */; };
 		5E175E591339924A00234482 /* FETCH_HEAD in Resources */ = {isa = PBXBuildFile; fileRef = 5E175E261339924A00234482 /* FETCH_HEAD */; };
@@ -64,7 +63,6 @@
 		5E2F7AD31346200F00136CD2 /* ofxShapeBatchRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F7AB91346200E00136CD2 /* ofxShapeBatchRenderer.cpp */; };
 		5E2F7AE8134621D200136CD2 /* bludAudioSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F7ADC134621D200136CD2 /* bludAudioSync.cpp */; };
 		5E2F7AE9134621D200136CD2 /* bludMixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F7AE2134621D200136CD2 /* bludMixer.cpp */; };
-		5E4B54A5134B559C0042E7FA /* sound_track in Resources */ = {isa = PBXBuildFile; fileRef = 5E4B549D134B559C0042E7FA /* sound_track */; };
 		5E4B5708134C786C0042E7FA /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5E4B56FF134C786C0042E7FA /* install.xml */; };
 		5E4B5709134C786C0042E7FA /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B5701134C786C0042E7FA /* tinyxml.cpp */; };
 		5E4B570A134C786C0042E7FA /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B5703134C786C0042E7FA /* tinyxmlerror.cpp */; };
@@ -83,11 +81,11 @@
 		5E5501B0134F6BEA0017890E /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5501A2134F6BEA0017890E /* ofxOscReceiver.cpp */; };
 		5E5501B1134F6BEA0017890E /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5501A4134F6BEA0017890E /* ofxOscSender.cpp */; };
 		5E739A27133D0C8B0087E195 /* spriteSheetExample.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E739A26133D0C8B0087E195 /* spriteSheetExample.png */; };
+		5E9F667C139D39A600A1A6B0 /* branfort in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F664F139D39A600A1A6B0 /* branfort */; };
 		5EBBC415133AD8A800B0CE3D /* CollageTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBC3EF133AD8A800B0CE3D /* CollageTexture.cpp */; };
 		5EBBC416133AD8A800B0CE3D /* LinearTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBC3F1133AD8A800B0CE3D /* LinearTexture.cpp */; };
 		5EBBC417133AD8A800B0CE3D /* ofxSpriteSheetRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBC3F3133AD8A800B0CE3D /* ofxSpriteSheetRenderer.cpp */; };
 		5EBBC418133AD8A800B0CE3D /* PixelTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EBBC3F5133AD8A800B0CE3D /* PixelTexture.cpp */; };
-		5EE6B9E4136B055A0044EDEA /* namcap in Resources */ = {isa = PBXBuildFile; fileRef = 5EE6B9DD136B055A0044EDEA /* namcap */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BB24DD8F10DA77E000E9C588 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB24DD8C10DA77E000E9C588 /* Default.png */; };
@@ -125,7 +123,7 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* SHRoad1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHRoad1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* branfort1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = branfort1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* iPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_Prefix.pch; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 		5E0E4B11139A739F0098ABDB /* ofxBlud.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofxBlud.mm; path = ../src/ofxBlud.mm; sourceTree = SOURCE_ROOT; };
 		5E0E4B15139A73B20098ABDB /* bludLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bludLock.cpp; path = ../src/bludLock.cpp; sourceTree = SOURCE_ROOT; };
 		5E0E4B16139A73B20098ABDB /* bludLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludLock.h; path = ../src/bludLock.h; sourceTree = SOURCE_ROOT; };
-		5E136A8E135DBC3500DB33B1 /* drum_brain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = drum_brain; path = bin/data/drum_brain; sourceTree = SOURCE_ROOT; };
 		5E175E241339924A00234482 /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = config; path = ../../ofxDspChain/.git/config; sourceTree = SOURCE_ROOT; };
 		5E175E251339924A00234482 /* description */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = description; path = ../../ofxDspChain/.git/description; sourceTree = SOURCE_ROOT; };
 		5E175E261339924A00234482 /* FETCH_HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FETCH_HEAD; path = ../../ofxDspChain/.git/FETCH_HEAD; sourceTree = SOURCE_ROOT; };
@@ -264,7 +261,6 @@
 		5E2F7AE5134621D200136CD2 /* bludSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludSynth.h; path = ../src/bludSynth.h; sourceTree = SOURCE_ROOT; };
 		5E2F7AE7134621D200136CD2 /* ofxBlud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxBlud.h; path = ../src/ofxBlud.h; sourceTree = SOURCE_ROOT; };
 		5E2F7AEB1346230A00136CD2 /* bludShapeBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludShapeBatch.h; path = ../src/bludShapeBatch.h; sourceTree = SOURCE_ROOT; };
-		5E4B549D134B559C0042E7FA /* sound_track */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sound_track; path = bin/data/sound_track; sourceTree = SOURCE_ROOT; };
 		5E4B5615134B7D750042E7FA /* bludOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludOsc.h; path = openFrameworks/addons/ofxBlud/src/bludOsc.h; sourceTree = DEVELOPER_DIR; };
 		5E4B56FF134C786C0042E7FA /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = install.xml; path = ../../ofxXmlSettings/install.xml; sourceTree = SOURCE_ROOT; };
 		5E4B5701134C786C0042E7FA /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = ../../ofxXmlSettings/libs/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
@@ -306,6 +302,7 @@
 		5E5501A5134F6BEA0017890E /* ofxOscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOscSender.h; path = ../../ofxOsc/src/ofxOscSender.h; sourceTree = SOURCE_ROOT; };
 		5E739A26133D0C8B0087E195 /* spriteSheetExample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spriteSheetExample.png; path = bin/data/spriteSheetExample.png; sourceTree = SOURCE_ROOT; };
 		5E772F16136F1A85003061E0 /* bludFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludFont.h; path = ../src/bludFont.h; sourceTree = SOURCE_ROOT; };
+		5E9F664F139D39A600A1A6B0 /* branfort */ = {isa = PBXFileReference; lastKnownFileType = folder; name = branfort; path = bin/data/branfort; sourceTree = SOURCE_ROOT; };
 		5EBBC3EF133AD8A800B0CE3D /* CollageTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollageTexture.cpp; path = ../../ofxSpriteSheetRenderer/src/CollageTexture.cpp; sourceTree = SOURCE_ROOT; };
 		5EBBC3F0133AD8A800B0CE3D /* CollageTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollageTexture.h; path = ../../ofxSpriteSheetRenderer/src/CollageTexture.h; sourceTree = SOURCE_ROOT; };
 		5EBBC3F1133AD8A800B0CE3D /* LinearTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LinearTexture.cpp; path = ../../ofxSpriteSheetRenderer/src/LinearTexture.cpp; sourceTree = SOURCE_ROOT; };
@@ -315,7 +312,6 @@
 		5EBBC3F5133AD8A800B0CE3D /* PixelTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PixelTexture.cpp; path = ../../ofxSpriteSheetRenderer/src/PixelTexture.cpp; sourceTree = SOURCE_ROOT; };
 		5EBBC3F6133AD8A800B0CE3D /* PixelTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelTexture.h; path = ../../ofxSpriteSheetRenderer/src/PixelTexture.h; sourceTree = SOURCE_ROOT; };
 		5EC213A9139B9A03000ECC78 /* bludClipboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bludClipboard.h; path = openFrameworks/addons/ofxBlud/branfort/src/bludClipboard.h; sourceTree = DEVELOPER_DIR; };
-		5EE6B9DD136B055A0044EDEA /* namcap */ = {isa = PBXFileReference; lastKnownFileType = folder; name = namcap; path = bin/data/namcap; sourceTree = SOURCE_ROOT; };
 		71804E9F131DDD5F009C406C /* lunar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lunar.h; path = ../libs/lunar.h; sourceTree = SOURCE_ROOT; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -423,7 +419,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* SHRoad1.app */,
+				1D6058910D05DD3D006BFB54 /* branfort1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1050,9 +1046,7 @@
 		BB24DD8B10DA77E000E9C588 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				5EE6B9DD136B055A0044EDEA /* namcap */,
-				5E136A8E135DBC3500DB33B1 /* drum_brain */,
-				5E4B549D134B559C0042E7FA /* sound_track */,
+				5E9F664F139D39A600A1A6B0 /* branfort */,
 				5E739A26133D0C8B0087E195 /* spriteSheetExample.png */,
 				BB24DD8C10DA77E000E9C588 /* Default.png */,
 				BB24DD8D10DA77E000E9C588 /* Icon.png */,
@@ -1304,9 +1298,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* SHRoad1 */ = {
+		1D6058900D05DD3D006BFB54 /* branfort1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SHRoad1" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "branfort1" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -1318,9 +1312,9 @@
 			dependencies = (
 				E49BCC6E12554C6C009F19D0 /* PBXTargetDependency */,
 			);
-			name = SHRoad1;
+			name = branfort1;
 			productName = iPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* SHRoad1.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* branfort1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1348,7 +1342,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* SHRoad1 */,
+				1D6058900D05DD3D006BFB54 /* branfort1 */,
 			);
 		};
 /* End PBXProject section */
@@ -1401,11 +1395,9 @@
 				5E175E721339924A00234482 /* master in Resources */,
 				5E175E731339924A00234482 /* HEAD in Resources */,
 				5E739A27133D0C8B0087E195 /* spriteSheetExample.png in Resources */,
-				5E4B54A5134B559C0042E7FA /* sound_track in Resources */,
 				5E4B5708134C786C0042E7FA /* install.xml in Resources */,
 				5E5501A6134F6BEA0017890E /* install.xml in Resources */,
-				5E136A98135DBC3500DB33B1 /* drum_brain in Resources */,
-				5EE6B9E4136B055A0044EDEA /* namcap in Resources */,
+				5E9F667C139D39A600A1A6B0 /* branfort in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1708,7 +1700,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SHRoad1" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "branfort1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

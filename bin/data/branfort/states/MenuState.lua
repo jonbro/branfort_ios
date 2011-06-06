@@ -1,0 +1,6 @@
+MenuState = class(Group, function(o)
+  Group.init(o)
+  o.clear = o:add(TextButton(20, 100, 120, 40, "CLEAR"))
+  o.help = o:add(TextButton(160, 100, 120, 40, "HELP"))
+  o.hide = o:add(TextButton(300, 100, 120, 40, "HIDE"))
+end)

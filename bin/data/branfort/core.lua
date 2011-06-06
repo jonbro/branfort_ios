@@ -11,20 +11,24 @@ lfont:load(blud.bundle_root .. "/univers.ttf", 18)
 
 gridSize = 40;
 pasteboard = bludClipboard();
-mainState = ProgrammingState();
+ps = ProgrammingState();
+mainState = MenuState();
 if pasteboard:getDefaults()~= nil then
   -- print("the defaults = " .. pasteboard:getDefaults())
-  mainState:setProgram(pasteboard:getDefaults())
+  ps:setProgram(pasteboard:getDefaults())
 end
 function blud.update(t)
   bb:clear();
-  mainState:update()
+  tb:clear();
+  mainState:update()  
 end
 function blud.draw()
   mainState:draw()
+  bb:draw()
+  tb:draw();
 end
 function blud.exit()
-  pasteboard:setDefaults(mainState.program)  
+  pasteboard:setDefaults(ps.program)  
 end
 function blud.touch.down(x, y, id)
   mainState:touchDown(x, y, id)
