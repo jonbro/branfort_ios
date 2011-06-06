@@ -2,4 +2,3 @@ menu
 	help file
 	confirmation for clearing program
 	slider inertia
-copy/paste integrated in program memory
